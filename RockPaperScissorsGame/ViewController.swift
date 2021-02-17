@@ -29,23 +29,33 @@ class ViewController: UIViewController {
     
     @IBAction func rockButtonPressed(_ sender: Any) {
         selection = "Rock"
+        outcome()
         outputLabel.text = output
+        winnerLabel.text = winner
     }
     @IBAction func paperButtonPressed(_ sender: Any) {
         selection = "Paper"
+        outcome()
         outputLabel.text = output
+        winnerLabel.text = winner
     }
     @IBAction func scissorsButtonPressed(_ sender: Any) {
         selection = "Scissors"
+        outcome()
         outputLabel.text = output
+        winnerLabel.text = winner
     }
     @IBAction func lizardButtonPressed(_ sender: Any) {
         selection = "Lizard"
+        outcome()
         outputLabel.text = output
+        winnerLabel.text = winner
     }
     @IBAction func spockButtonPressed(_ sender: Any) {
         selection = "Spock"
+        outcome()
         outputLabel.text = output
+        winnerLabel.text = winner
     }
     
     func outcome() {
@@ -71,70 +81,70 @@ class ViewController: UIViewController {
 
         //If you selected Paper this will determine your outcome.
         if selection == "Paper" && randomAction == "Paper" {
-            print("Its a draw!!")
+            winner = ("Its a draw!!")
         }
         if selection == "Paper" && randomAction == "Rock" {
-            print("You're a WINNER!!")
+            winner = ("You're a WINNER!!")
         }
         if selection == "Paper" && randomAction == "Scissors" {
-            print("You're a loser")
+            winner = ("You're a loser")
         }
         if selection == "Paper" && randomAction == "Lizard" {
-            print("You're a loser")
+            winner = ("You're a loser")
         }
         if selection == "Paper" && randomAction == "Spock" {
-            print("You're a WINNER!!")
+            winner = ("You're a WINNER!!")
         }
 
         //If you selected Scissors this will determine your outcome.
         if selection == "Scissors" && randomAction == "Scissors" {
-            print("Its a draw!!")
+            winner = ("Its a draw!!")
         }
         if selection == "Scissors" && randomAction == "Paper" {
-            print("You're a WINNER")
+            winner = ("You're a WINNER")
         }
         if selection == "Scissors" && randomAction == "Rock" {
-            print("You're a loser")
+            winner = ("You're a loser")
         }
         if selection == "Scissors" && randomAction == "Lizard" {
-            print("You're a WINNER")
+            winner = ("You're a WINNER")
         }
         if selection == "Scissors" && randomAction == "Spock" {
-            print("You're a loser")
+            winner = ("You're a loser")
         }
 
         //If you selected Lizard this will determine your outcome.
         if selection == "Lizard" && randomAction == "Lizard" {
-            print("Its a draw!!")
+            winner = ("Its a draw!!")
         }
         if selection == "Lizard" && randomAction == "Paper" {
-            print("You're a WINNER")
+            winner = ("You're a WINNER")
         }
         if selection == "Lizard" && randomAction == "Rock" {
-            print("You're a loser")
+            winner = ("You're a loser")
         }
         if selection == "Lizard" && randomAction == "Scissors" {
-            print("You're a loser")
+            winner = ("You're a loser")
         }
         if selection == "Lizard" && randomAction == "Spock" {
-            print("You're a WINNER")
+            winner = ("You're a WINNER")
         }
 
         //If you selected Spock this will determine your outcome.
         if selection == "Spock" && randomAction == "Spock" {
-            print("Its a draw!!")
+            winner = ("Its a draw!!")
         }
         if selection == "Spock" && randomAction == "Paper" {
-            print("You're a loser")
+            winner = ("You're a loser")
         }
         if selection == "Spock" && randomAction == "Rock" {
-            print("You're a WINNER")
+            winner = ("You're a WINNER")
         }
         if selection == "Spock" && randomAction == "Scissors" {
-            print("You're a WINNER")
+            winner = ("You're a WINNER")
         }
         if selection == "Spock" && randomAction == "Lizard" {
-            print("You're a loser")
+            winner = ("You're a loser")
         }
     }
     
