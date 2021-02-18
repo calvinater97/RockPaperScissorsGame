@@ -64,16 +64,16 @@ class ViewController: UIViewController {
         
         output = ("You choose: \(selection), which is going up against: \(randomAction)")
         if selection == "Rock" && randomAction == "Rock" {
-            winner = ("Its a draw!!")
+            winner = ("Its a draw")
         }
         if selection == "Rock" && randomAction == "Paper" {
             winner = ("You're a loser")
         }
         if selection == "Rock" && randomAction == "Scissors" {
-            winner = ("You're a WINNER!!")
+            winner = ("WINNER!!")
         }
         if selection == "Rock" && randomAction == "Lizard" {
-            winner = ("You're a WINNER!!")
+            winner = ("WINNER!!")
         }
         if selection == "Rock" && randomAction == "Spock" {
             winner = ("You're a loser")
@@ -81,10 +81,10 @@ class ViewController: UIViewController {
 
         //If you selected Paper this will determine your outcome.
         if selection == "Paper" && randomAction == "Paper" {
-            winner = ("Its a draw!!")
+            winner = ("Its a draw")
         }
         if selection == "Paper" && randomAction == "Rock" {
-            winner = ("You're a WINNER!!")
+            winner = ("WINNER!!")
         }
         if selection == "Paper" && randomAction == "Scissors" {
             winner = ("You're a loser")
@@ -93,21 +93,21 @@ class ViewController: UIViewController {
             winner = ("You're a loser")
         }
         if selection == "Paper" && randomAction == "Spock" {
-            winner = ("You're a WINNER!!")
+            winner = ("WINNER!!")
         }
 
         //If you selected Scissors this will determine your outcome.
         if selection == "Scissors" && randomAction == "Scissors" {
-            winner = ("Its a draw!!")
+            winner = ("Its a draw")
         }
         if selection == "Scissors" && randomAction == "Paper" {
-            winner = ("You're a WINNER")
+            winner = ("WINNER!!")
         }
         if selection == "Scissors" && randomAction == "Rock" {
             winner = ("You're a loser")
         }
         if selection == "Scissors" && randomAction == "Lizard" {
-            winner = ("You're a WINNER")
+            winner = ("WINNER!!")
         }
         if selection == "Scissors" && randomAction == "Spock" {
             winner = ("You're a loser")
@@ -115,10 +115,10 @@ class ViewController: UIViewController {
 
         //If you selected Lizard this will determine your outcome.
         if selection == "Lizard" && randomAction == "Lizard" {
-            winner = ("Its a draw!!")
+            winner = ("Its a draw")
         }
         if selection == "Lizard" && randomAction == "Paper" {
-            winner = ("You're a WINNER")
+            winner = ("WINNER!!")
         }
         if selection == "Lizard" && randomAction == "Rock" {
             winner = ("You're a loser")
@@ -127,21 +127,21 @@ class ViewController: UIViewController {
             winner = ("You're a loser")
         }
         if selection == "Lizard" && randomAction == "Spock" {
-            winner = ("You're a WINNER")
+            winner = ("WINNER!!")
         }
 
         //If you selected Spock this will determine your outcome.
         if selection == "Spock" && randomAction == "Spock" {
-            winner = ("Its a draw!!")
+            winner = ("Its a draw")
         }
         if selection == "Spock" && randomAction == "Paper" {
             winner = ("You're a loser")
         }
         if selection == "Spock" && randomAction == "Rock" {
-            winner = ("You're a WINNER")
+            winner = ("WINNER!!")
         }
         if selection == "Spock" && randomAction == "Scissors" {
-            winner = ("You're a WINNER")
+            winner = ("WINNER!!")
         }
         if selection == "Spock" && randomAction == "Lizard" {
             winner = ("You're a loser")
